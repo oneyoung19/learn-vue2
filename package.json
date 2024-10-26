@@ -48,6 +48,5 @@
   },
   "lint-staged": {
     "*.{js,jsx,vue}": "eslint --fix"
-  },
-	"packageManager": "pnpm@1.2.2"
+  }
 }
