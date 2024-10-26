@@ -11,9 +11,9 @@ const routes = [
 		component: Home
 	},
 	{
-		path: '/1.instance',
-		name: '1Instance',
-		component: () => import('../views/1.instance.vue')
+		path: '/1.render',
+		name: '1Render',
+		component: () => import('../views/1.render')
 	}
 ]
 
