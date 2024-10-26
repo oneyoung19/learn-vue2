@@ -1,14 +1,22 @@
+const { lintExtends, lintRules } = require('./eslintconfig')('prettier')
+
 module.exports = {
-  root: true,
-  env: {
-    node: true,
-  },
-  extends: ["plugin:vue/essential", "eslint:recommended", "@vue/prettier"],
-  parserOptions: {
-    parser: "babel-eslint",
-  },
-  rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-  },
-};
+	root: true,
+	env: {
+		node: true
+	},
+	extends: [...lintExtends],
+	parserOptions: {
+		// @babel/eslint-parser can transform new grammar better than default espree
+		parser: '@babel/eslint-parser',
+		babelOptions: {
+			parserOpts: {
+				// Support parse jsx
+				plugins: ['jsx']
+			}
+		}
+	},
+	rules: {
+		...lintRules
+	}
+}
