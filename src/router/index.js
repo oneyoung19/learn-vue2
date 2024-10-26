@@ -19,6 +19,11 @@ const routes = [
 		path: '/2.jsx',
 		name: '2Jsx',
 		component: () => import('../views/2.jsx')
+	},
+	{
+		path: '/3.functional',
+		name: '3Functional',
+		component: () => import('../views/3.functional')
 	}
 ]
 
