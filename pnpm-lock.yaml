@@ -45,6 +45,12 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^19.2.2
         version: 19.5.0
+      '@vue/babel-helper-vue-jsx-merge-props':
+        specifier: ^1.4.0
+        version: 1.4.0
+      '@vue/babel-preset-jsx':
+        specifier: ^1.4.0
+        version: 1.4.0(@babel/core@7.25.9)(vue@2.7.16)
       '@vue/cli-plugin-babel':
         specifier: ~4.5.15
         version: 4.5.19(@vue/cli-service@4.5.19(@vue/compiler-sfc@3.5.12)(less-loader@5.0.0(less@3.13.1)(webpack@4.47.0))(lodash@4.17.21)(prettier@3.0.3)(typescript@5.6.3)(vue-template-compiler@2.7.16)(vue@2.7.16))(core-js@3.38.1)(vue@2.7.16)

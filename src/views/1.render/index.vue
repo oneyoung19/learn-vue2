@@ -14,7 +14,7 @@ const RenderComponent = {
 	},
 	data () {
 		return {
-			msg: 'Hello World'
+			msg: 'Render'
 		}
 	},
 	render (h) {

@@ -7,6 +7,9 @@ module.exports = {
 				modules: false,
 				targets: ['> 1%', 'last 2 versions', 'not ie <= 8']
 			}
+		],
+		[
+			'@vue/babel-preset-jsx'
 		]
 	],
 	plugins: [

@@ -14,6 +14,11 @@ const routes = [
 		path: '/1.render',
 		name: '1Render',
 		component: () => import('../views/1.render')
+	},
+	{
+		path: '/2.jsx',
+		name: '2Jsx',
+		component: () => import('../views/2.jsx')
 	}
 ]
 
