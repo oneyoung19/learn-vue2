@@ -24,6 +24,11 @@ const routes = [
 		path: '/3.functional',
 		name: '3Functional',
 		component: () => import('../views/3.functional')
+	},
+	{
+		path: '/4.keep-alive',
+		name: '4KeepAlive',
+		component: () => import('../views/4.keep-alive')
 	}
 ]
 
