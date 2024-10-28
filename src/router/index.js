@@ -44,6 +44,11 @@ const routes = [
 		path: '/vue-compile',
 		name: 'VueCompile',
 		component: () => import('../views/vue-compile')
+	},
+	{
+		path: '/vue-extend',
+		name: 'VueExtend',
+		component: () => import('../views/vue-extend')
 	}
 ]
 
