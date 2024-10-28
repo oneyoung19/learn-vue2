@@ -34,6 +34,11 @@ const routes = [
 		path: '/5.dynamic-component',
 		name: '5DynamicComponent',
 		component: () => import('../views/5.dynamic-component')
+	},
+	{
+		path: '/6.async-component',
+		name: '6AsyncComponent',
+		component: () => import('../views/6.async-component')
 	}
 ]
 
