@@ -39,6 +39,11 @@ const routes = [
 		path: '/6.async-component',
 		name: '6AsyncComponent',
 		component: () => import('../views/6.async-component')
+	},
+	{
+		path: '/vue-compile',
+		name: 'VueCompile',
+		component: () => import('../views/vue-compile')
 	}
 ]
 
