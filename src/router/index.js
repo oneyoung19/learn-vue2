@@ -29,6 +29,11 @@ const routes = [
 		path: '/4.keep-alive',
 		name: '4KeepAlive',
 		component: () => import('../views/4.keep-alive')
+	},
+	{
+		path: '/5.dynamic-component',
+		name: '5DynamicComponent',
+		component: () => import('../views/5.dynamic-component')
 	}
 ]
 
