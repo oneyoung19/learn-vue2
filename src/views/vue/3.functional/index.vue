@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<MyComponent name="Andy" id="my-component" @click="handleMyComponentClicked">
+		<RenderComponent name="Andy" id="my-component" @click="handleMyComponentClicked">
 			<p class="children">Children</p>
 			<template v-slot:foo>
 				<p>Foo Slot</p>
@@ -10,7 +10,7 @@
 					{{ slotProps.msg }}
 				</div>
 			</template>
-		</MyComponent>
+		</RenderComponent>
 		<FunctionalTemplate msg="Click me!">Button</FunctionalTemplate>
 	</div>
 </template>
@@ -18,7 +18,7 @@
 <script>
 import FunctionalTemplate from './FunctionalTemplate.vue'
 
-const MyComponent = {
+const RenderComponent = {
 	functional: true,
 	props: {
 		name: {
@@ -43,7 +43,7 @@ const MyComponent = {
 
 export default {
 	components: {
-		MyComponent,
+		RenderComponent,
 		FunctionalTemplate
 	},
 	data () {

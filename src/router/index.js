@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import vueRoutes from './vue'
 
 Vue.use(VueRouter)
 
@@ -10,46 +11,7 @@ const routes = [
 		name: 'Home',
 		component: Home
 	},
-	{
-		path: '/1.render',
-		name: '1Render',
-		component: () => import('../views/1.render')
-	},
-	{
-		path: '/2.jsx',
-		name: '2Jsx',
-		component: () => import('../views/2.jsx')
-	},
-	{
-		path: '/3.functional',
-		name: '3Functional',
-		component: () => import('../views/3.functional')
-	},
-	{
-		path: '/4.keep-alive',
-		name: '4KeepAlive',
-		component: () => import('../views/4.keep-alive')
-	},
-	{
-		path: '/5.dynamic-component',
-		name: '5DynamicComponent',
-		component: () => import('../views/5.dynamic-component')
-	},
-	{
-		path: '/6.async-component',
-		name: '6AsyncComponent',
-		component: () => import('../views/6.async-component')
-	},
-	{
-		path: '/vue-compile',
-		name: 'VueCompile',
-		component: () => import('../views/vue-compile')
-	},
-	{
-		path: '/vue-extend',
-		name: 'VueExtend',
-		component: () => import('../views/vue-extend')
-	}
+	vueRoutes
 ]
 
 const router = new VueRouter({
