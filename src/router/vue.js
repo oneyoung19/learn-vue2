@@ -42,6 +42,11 @@ export default {
 			path: 'vue-extend',
 			name: 'VueExtend',
 			component: () => import('../views/vue/vue-extend')
+		},
+		{
+			path: 'source/1.reactive',
+			name: 'VueSource1Reactive',
+			component: () => import('../views/vue/source/1.reactive')
 		}
 	]
 }
