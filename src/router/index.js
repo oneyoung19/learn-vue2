@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import vueRoutes from './vue'
+import vueRouterRoutes from './vue-router'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,7 @@ const routes = [
 		component: Home
 	},
 	vueRoutes,
+	vueRouterRoutes,
 	{
 		path: '/404',
 		name: '404',
